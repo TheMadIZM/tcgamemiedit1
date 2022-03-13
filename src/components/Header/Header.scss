@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+
+.tc-header {
+	margin-bottom: 40px;
+	display: flex;
+	height: $headerHeight;
+	justify-content: space-between;
+
+	&__logo-title {
+		margin: 20px;
+		display: flex;
+		align-items: center;
+		color: yellow;
+
+		@media (max-width: 768px) {
+			width: 100%;
+			justify-content: center;
+		}
+	}
+
+	&__right {
+		display: flex !important;
+		align-items: center;
+		justify-content: flex-end;
+
+		@media (max-width: 768px) {
+			justify-content: center;
+		}
+	}
+}
